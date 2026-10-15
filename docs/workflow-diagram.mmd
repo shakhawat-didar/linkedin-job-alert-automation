@@ -1,0 +1,10 @@
+flowchart TD
+    A[Webhook POST] --> B[Start Apify Actor]
+    B --> C[Wait Before Check]
+    C --> D[Check Run Status]
+    D --> E{Status?}
+    E -- SUCCEEDED --> F[Get Scraped Dataset]
+    F --> G[Map Job Fields]
+    G --> H[Append to Google Sheets]
+    E -- FAILED / ABORTED / TIMED-OUT --> I[Format Error]
+    E -- Running / Other --> C

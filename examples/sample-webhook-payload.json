@@ -1,0 +1,9 @@
+{
+  "count": 5,
+  "scrapeCompany": true,
+  "splitByLocation": false,
+  "splitCountry": "BD",
+  "urls": [
+    "REPLACE_WITH_YOUR_LINKEDIN_JOBS_SEARCH_URL"
+  ]
+}
